@@ -1,0 +1,16 @@
+begin
+dbms_output.out_line('mi programa de PL SQL');
+end;
+/
+
+//PROGRAMA 2
+
+DECLARE
+NOMBRE VARCHAR2(80);
+EDAD INTERGER;
+BEGIN
+NONBRE:='JUAN CARLOS';
+EDAD=42:
+DBMS_OUTPUT.PUT_LINE('HOLA' ||NOMBRE||'TU EDAD ES'||EDAD);
+END;
+/
