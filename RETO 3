@@ -1,0 +1,29 @@
+CREATE TABLE libros (
+book_id VARCHAR (20),
+	isbn VARCHAR2(13),
+		titulo VARCHAR2(200),
+			resumen VARCHAR2(2000),
+				autor VARCHAR2(200),
+					fecha_publiccion DATE,
+							num_pag NUMBER
+ CONSTRAINT books_pk PRIMARY KEY (book_id),
+);
+SET SERVEROUTPUT ON;
+
+CREATE SEQUENCE sec_libros 
+   START WITH 100
+   INCREMENT BY 1;
+
+CREATE OR REPLACE
+ PROCEDURE libros AS
+  book_id, fecha;
+
+BEGIN
+  
+    UPDATE book_id
+      WHERE fecha= CUURENT_DAY;
+        DBMS_OUTPUT.PUT_LINE (book_id)l
+	  DBMS_OUTPUT.PUT_LINE ('la fecha actua es:' ||fecha);
+
+END;
+/
